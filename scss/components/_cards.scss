@@ -1,0 +1,95 @@
+.card {
+    
+    background-color: #f8f8f8;
+    overflow: hidden; 
+   
+    &--product {
+        @extend .card; 
+
+        
+        padding: 20px;
+        
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card__image {
+            max-width: 100%; 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+
+        .card__content {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            height: 100%; 
+        }
+
+        .card__title {
+            font-size: 1.5rem; 
+            margin-bottom: 0.5rem;
+            color: #333; 
+        }
+
+        .card__text {
+            color: #555; 
+            margin-bottom: 1rem;
+        }
+
+        .card__price {
+            font-weight: bold;
+            color: #007bff; 
+            font-size: 1.2rem; 
+            margin-right: 0.5rem; 
+            width: 100%;
+        }
+
+        .buttons-container {
+            display: flex; 
+            align-items: center; 
+        }
+
+        .button {
+            font-size: 1rem; 
+            padding: 0.5rem 1rem; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+
+        .button--sm {
+            font-size: 0.8rem; 
+        }
+
+        .button--add {
+            background-color: #28a745; 
+            color: #000000; 
+            margin-right: 0.5rem; 
+        }
+
+        .button--remove {
+            background-color: #dc3545; 
+            color: #000000; 
+        }
+
+        .card__counter {
+            font-size: 1rem; 
+            margin-right: 0.5rem; 
+            color: #555; 
+        }
+       
+    }
+}
+
+.tittle-gallery{
+    text-align: center; 
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 1.5rem; 
+    font-weight: bold;
+    margin-top: 20px;
+ }

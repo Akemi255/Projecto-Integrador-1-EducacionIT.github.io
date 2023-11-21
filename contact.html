@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esta página es un tienda de x cosa" />
+    <meta name="keywords" content="tienda, proyecto, proyecto integrador" />
+    <meta name="author" content="x" />
+
+    <title>Mi tienda - Contacto</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </head>
+<body>
+    <header class="header">
+        <button class="header__logo" id="toggleDarkMode" aria-label="Toggle Dark Mode">
+          <i id="toggleIcon" class="material-icons">brightness_3</i>
+        </button>
+        <a href="./index.html"><h1 class="header__title">Mi tienda</h1></a>
+  
+        <nav class="navbar">
+          <ul class="navbar__menu">
+            <li>
+              <a class="navbar__item navbar__item--active" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+            <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
+           
+          </ul>
+        </nav>
+      </header>
+
+     
+      <main class="main">
+        <section class="contact-section">
+          <div class="contact-info">
+            <div>
+              <strong>Teléfono:</strong>
+              <p>+1 234 567 890</p>
+            </div>
+      
+            <div>
+              <strong>Correo Electrónico:</strong>
+              <p>info@mitienda.com</p>
+            </div>
+      
+            <div>
+              <strong>Dirección:</strong>
+              <p>123 Calle Principal, Ciudad</p>
+            </div>
+          </div>
+      
+          <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm" onsubmit="submitForm(); return false;">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required />
+      
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required />
+      
+              <label for="message">Consulta:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+      
+              <button type="submit">Enviar Consulta</button>
+            </form>
+          </div>
+      
+          <div class="map-frame">
+            
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.000000!3d0.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDIyJzM5LjAiTiAwN8KwNTQnMTYuMCJF!5e0!3m2!1sen!2suk!4v1234567890123"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+      </main>
+     
+      
+      
+
+    <footer class="footer">
+        <span>&copy;2023 Todos los derechos reservados</span>
+      </footer>
+      
+
+      <script src="js/main.js"></script>
+      <script src="js/contactFormValidation.js"></script>
+</body>
+</html>
