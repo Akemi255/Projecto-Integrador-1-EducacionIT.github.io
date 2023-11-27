@@ -1,6 +1,22 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-.navbar {
-
-}
+.navbar__item {
+    position: relative;
+    top: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: red;
+      transition: width 0.3s ease-in-out;
+    }
+  
+    &:hover:before {
+      width: 100%;
+    }
+  }
+  
