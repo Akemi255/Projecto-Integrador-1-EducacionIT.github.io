@@ -15,14 +15,25 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <style></style>
   </head>
 
   <body class="home">
     <header class="header">
-      <button class="header__logo" id="toggleDarkMode" aria-label="Toggle Dark Mode">
+      <button
+        class="header__logo"
+        id="toggleDarkMode"
+        aria-label="Toggle Dark Mode"
+      >
         <i id="toggleIcon" class="material-icons icon-dark-sun">brightness_3</i>
       </button>
       <a href="index.html"><h1 class="header__title">DreamDrive</h1></a>
@@ -38,253 +49,242 @@
           <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
           <li class="navbar__item--cart car">
             <span class="material-symbols-outlined">shopping_cart</span>
-        </li>
+          </li>
         </ul>
       </nav>
     </header>
-
     <main class="main">
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Buscar productos..."
+        />
+        <button class="search-button">Buscar</button>
+      </div>
       <section class="section section--slider">
-        <div class="slider">
-          <div class="slider__one">
-            <h4 class="slider__title"></h4>
-            <img
-              class="slider__image"
-              src="./images/gallery/img01.jpg"
-              alt="x"
-            />
+        <div class="custom-slider">
+          <div class="custom-slider-container">
+            <div class="custom-slide">
+              <h4 class="custom-slide-title"></h4>
+              <img
+                class="custom-slide-image"
+                src="./images/Slider/blackFriday.jpg"
+                alt="x"
+              />
+            </div>
+            <div class="custom-slide">
+              <h4 class="custom-slide-title"></h4>
+              <img
+                class="custom-slide-image"
+                src="./images/Slider/navidad.jpg"
+                alt="x"
+              />
+            </div>
           </div>
-          <div class="slider__two">
-            <h4 class="slider__title"></h4>
-            <img
-              class="slider__image"
-              src="./images/gallery/img02.jpg"
-              alt="x"
-            />
-          </div>
-          <div class="slider__three">
-            <h4 class="slider__title"></h4>
-            <img
-              class="slider__image"
-              src="./images/gallery/img03.jpg"
-              alt="x"
-            />
-          </div>
-          
         </div>
       </section>
       <h3 class="tittle-gallery">Galería de Productos</h3>
       <section class="section section--products">
-        
-       <!-- Producto 1 -->
-       <figure class="card card--product" data-id="product-1">
-        <img
-          class="card__image"
-          src="./images/gallery/img01.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Amarillo</h4>
-        <p class="card__text">
-          Elegante carro deportivo de color rojo.
-        </p>
-        <div>
-          <span class="card__price">55,000.22</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 1 -->
+        <figure class="card card--product" data-id="product-1">
+          <img
+            class="card__image"
+            src="./images/gallery/img01.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Amarillo</h4>
+          <p class="card__text">Elegante carro deportivo de color rojo.</p>
+          <div>
+            <span class="card__price">55,000.22</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 2 -->
-      <figure class="card card--product" data-id="product-2">
-        <img
-          class="card__image"
-          src="./images/gallery/img02.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Todoterreno Negro</h4>
-        <p class="card__text">
-          Resistente carro todoterreno de color negro.
-        </p>
-        <div>
-          <span class="card__price">75,000.72</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 2 -->
+        <figure class="card card--product" data-id="product-2">
+          <img
+            class="card__image"
+            src="./images/gallery/img02.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Todoterreno Negro</h4>
+          <p class="card__text">Resistente carro todoterreno de color negro.</p>
+          <div>
+            <span class="card__price">75,000.72</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 3 -->
-      <figure class="card card--product" data-id="product-3">
-        <img
-          class="card__image"
-          src="./images/gallery/img03.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Familiar Plateado</h4>
-        <p class="card__text">
-          Espacioso carro familiar de color plateado.
-        </p>
-        <div>
-          <span class="card__price">45,500.50</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 3 -->
+        <figure class="card card--product" data-id="product-3">
+          <img
+            class="card__image"
+            src="./images/gallery/img03.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Familiar Plateado</h4>
+          <p class="card__text">Espacioso carro familiar de color plateado.</p>
+          <div>
+            <span class="card__price">45,500.50</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 4 -->
-      <figure class="card card--product" data-id="product-4">
-        <img
-          class="card__image"
-          src="./images/gallery/img04.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Eléctrico Azul</h4>
-        <p class="card__text">
-          Innovador carro eléctrico de color azul.
-        </p>
-        <div>
-          <span class="card__price">60,200.30</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 4 -->
+        <figure class="card card--product" data-id="product-4">
+          <img
+            class="card__image"
+            src="./images/gallery/img04.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Eléctrico Azul</h4>
+          <p class="card__text">Innovador carro eléctrico de color azul.</p>
+          <div>
+            <span class="card__price">60,200.30</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 5 -->
-      <figure class="card card--product" data-id="product-5">
-        <img
-          class="card__image"
-          src="./images/gallery/img05.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Clásico Verde</h4>
-        <p class="card__text">
-          Clásico carro verde de estilo vintage.
-        </p>
-        <div>
-          <span class="card__price">48,900.90</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 5 -->
+        <figure class="card card--product" data-id="product-5">
+          <img
+            class="card__image"
+            src="./images/gallery/img05.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Clásico Verde</h4>
+          <p class="card__text">Clásico carro verde de estilo vintage.</p>
+          <div>
+            <span class="card__price">48,900.90</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 6 -->
-      <figure class="card card--product" data-id="product-6">
-        <img
-          class="card__image"
-          src="./images/gallery/img06.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Compacto Amarillo</h4>
-        <p class="card__text">
-          Compacto carro amarillo perfecto para la ciudad.
-        </p>
-        <div>
-          <span class="card__price">35,600.10</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 6 -->
+        <figure class="card card--product" data-id="product-6">
+          <img
+            class="card__image"
+            src="./images/gallery/img06.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Compacto Amarillo</h4>
+          <p class="card__text">
+            Compacto carro amarillo perfecto para la ciudad.
+          </p>
+          <div>
+            <span class="card__price">35,600.10</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 7 -->
-      <figure class="card card--product" data-id="product-7">
-        <img
-          class="card__image"
-          src="./images/gallery/img07.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro De Lujo Plateado</h4>
-        <p class="card__text">
-          lujoso carro plateado con características premium.
-        </p>
-        <div>
-          <span class="card__price">85,700.45</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 7 -->
+        <figure class="card card--product" data-id="product-7">
+          <img
+            class="card__image"
+            src="./images/gallery/img07.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro De Lujo Plateado</h4>
+          <p class="card__text">
+            lujoso carro plateado con características premium.
+          </p>
+          <div>
+            <span class="card__price">85,700.45</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 8 -->
-      <figure class="card card--product" data-id="product-8">
-        <img
-          class="card__image"
-          src="./images/gallery/img08.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro De Aventura Naranja</h4>
-        <p class="card__text">
-          Carro naranja diseñado para aventuras todoterreno.
-        </p>
-        <div>
-          <span class="card__price">70,300.80</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 8 -->
+        <figure class="card card--product" data-id="product-8">
+          <img
+            class="card__image"
+            src="./images/gallery/img08.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro De Aventura Naranja</h4>
+          <p class="card__text">
+            Carro naranja diseñado para aventuras todoterreno.
+          </p>
+          <div>
+            <span class="card__price">70,300.80</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 9 -->
-      <figure class="card card--product" data-id="product-9">
-        <img
-          class="card__image"
-          src="./images/gallery/img09.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro Ecológico Blanco</h4>
-        <p class="card__text">
-          Carro blanco con tecnología ecológica y eficiente.
-        </p>
-        <div>
-          <span class="card__price">58,400.60</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 9 -->
+        <figure class="card card--product" data-id="product-9">
+          <img
+            class="card__image"
+            src="./images/gallery/img09.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro Ecológico Blanco</h4>
+          <p class="card__text">
+            Carro blanco con tecnología ecológica y eficiente.
+          </p>
+          <div>
+            <span class="card__price">58,400.60</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
 
-      <!-- Producto 10 -->
-      <figure class="card card--product" data-id="product-10">
-        <img
-          class="card__image"
-          src="./images/gallery/img10.jpg"
-          alt="Breve descripción de la foto del producto"
-        />
-        <h4 class="card__title">Carro De Diseño Gris</h4>
-        <p class="card__text">
-          Carro gris con diseño moderno y elegante.
-        </p>
-        <div>
-          <span class="card__price">65,800.40</span>
-          <div class="buttons-container">
-            <button class="button button--sm button--add">Agregar</button>
-            <button class="button button--sm button--remove">Quitar</button>
+        <!-- Producto 10 -->
+        <figure class="card card--product" data-id="product-10">
+          <img
+            class="card__image"
+            src="./images/gallery/img10.jpg"
+            alt="Breve descripción de la foto del producto"
+          />
+          <h4 class="card__title">Carro De Diseño Gris</h4>
+          <p class="card__text">Carro gris con diseño moderno y elegante.</p>
+          <div>
+            <span class="card__price">65,800.40</span>
+            <div class="buttons-container">
+              <button class="button button--sm button--add">Agregar</button>
+              <button class="button button--sm button--remove">Quitar</button>
+            </div>
           </div>
-        </div>
-      </figure>
-
+        </figure>
       </section>
 
-      <a href="product.html" class="link form-link">Formulario para crear producto</a>
+      <a href="product.html" class="link form-link"
+        >Formulario para crear producto</a
+      >
     </main>
 
     <footer class="footer">
       <span>&copy;2023 Todos los derechos reservados</span>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/addCar.js"></script>
   </body>
